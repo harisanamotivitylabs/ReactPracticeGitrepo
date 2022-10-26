@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 5px;
+            margin: 0%;
+
+        }
+
+        h1 {
+            padding-top: 20px;
+            text-align: center;
+        }
+
+        .rightform {
+
+            width: max-content;
+            background-color: rgb(189, 191, 191);
+            margin: auto;
+
+        }
+
+        table {
+            padding: 10px;
+            margin: 20px;
+        }
+
+        td {
+            padding: 10px;
+            margin: 20px;
+        }
+
+        input {
+            padding: 2px;
+        }
+
+        #subbtn {
+            border: none;
+            background-color: #2409d0;
+            margin: 10px;
+            padding: 5px;
+            color: rgb(242, 245, 248);
+            width: 100px;
+            border-radius: 20px;
+            transition: 0.5s;
+
+        }
+
+        #subbtn:hover {
+            background-color: darkgray;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <div class="rightform">
+            <h1> Register Form </h1>
+            <form name="registerform">
+                <table>
+                    <tr>
+                        <td>Upload Profile Pic</td>
+                        <td> : <input type="file" id="photo" /></td>
+                    </tr>
+                    <tr>
+                        <td>FIRST NAME </td>
+                        <td> : <input type="text" id="Fname" placeholder="Enter First Name" /></td>
+                    </tr>
+                    <tr>
+                        <td>LAST NAME </td>
+                        <td> : <input type="text" id="Lname" placeholder="Enter Last Name" /></td>
+                    </tr>
+                    <tr>
+                        <td>AGE </td>
+                        <td> : <input type="NUMBER" id="age" placeholder="Enter AGE" /></td>
+                    </tr>
+                    <tr>
+                        <td>GENDER </td>
+                        <td> : <input type="radio" name="gender" value="male" />Male<input type="radio" name="gender"
+                                value="female" />Female<input type="radio" name="gender" value="female" />Others</td>
+                    </tr>
+                    <tr>
+                        <td>EMAIL </td>
+                        <td> : <input type="email" id="email" placeholder="Enter Email id" /></td>
+                    </tr>
+                    <tr>
+                        <td>CREATE PASSWORD </td>
+                        <td> : <input type="password" id="name" placeholder="Enter Password" /></td>
+                    </tr>
+                    <tr>
+                        <td>CONFRIOM PASSWORD </td>
+                        <td> : <input type="password" id="name" placeholder="Confrim Password" /></td>
+                    </tr>
+                    <tr>
+                        <td>DATE OF BIRTH </td>
+                        <td> : <input type="date" id="name" placeholder="dob" /></td>
+                    </tr>
+                    <tr>
+                        <td>ADDRESS </td>
+                        <td> : <textarea rows="3" cols="30" name="address"> </textarea></td>
+
+                    </tr>
+
+                    <tr>
+                        <td> </td>
+                        <td> <input type="checkbox" name="terms" />accept Terms and Conditions</td>
+                    </tr>
+                    <tr>
+                        <td> </td>
+                        <td><input type="submit" value="Register" id="subbtn" />&emsp;&emsp;<input type="reset"
+                                value="Reset" id="subbtn" /></td>
+                    </tr>
+                </table>
+
+            </form>
+
+
+        </div>
+
+    </div>
+</body>
+
+</html>

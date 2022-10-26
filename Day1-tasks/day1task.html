@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day1</title>
+    <style>
+        * {
+            padding: 0px;
+            margin: 0px;
+        }
+
+        .forms {
+            background-color: rgb(197, 208, 236);
+          max-width:fit-content;
+            align-items: center;
+            margin: auto;
+            padding-left: 20px;
+            padding-right: 20px;
+        
+           
+           
+        }
+
+        label {
+            text-align: right;
+        }
+
+        td {
+            margin: 10px;
+            padding: 5px;
+            justify-content: left;
+
+        }
+
+        h1 {
+            padding: 20px;
+            margin: 20px;
+            color: rgb(16, 16, 48);
+        }
+
+        input {
+            padding: 5px;
+            margin: 2px;
+            border: none;
+        }
+
+        #btn {
+            display: inline-block;
+            background: #1fc03a;
+            color: aliceblue;
+            padding: 5px 20px;
+            margin: 20px;
+            border-radius: 30px;
+            transition: 0.8s;
+        }
+
+        #btn:hover {
+            background: rgb(143, 154, 174);
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="forms">
+        <h1>Registeration Form</h1>
+        <table>
+            <tr>
+                <td><label for="">First Name </label></td>
+                <td>: <input type="text" name="fname" id="" placeholder="Enter first name"></td>
+            </tr>
+            <tr>
+                <td> <label for="">Last Name </label></td>
+                <td>: <input type="text" name="lname" id="" placeholder="Enter last name"></td>
+            </tr>
+            <tr>
+                <td><label for="">User Name </label></td>
+                <td>: <input type="text" name="uname" id="" placeholder="Enter user name"></td>
+            </tr>
+            <tr>
+                <td> <label for="">Password </label></td>
+                <td>: <input type="password" name="password" id="" placeholder="Enter password"></td>
+            </tr>
+            <tr>
+                <td><label for="">Email  </label></td>
+                <td>: <input type="email" name="email" id="" placeholder="Enter email address"></td>
+            </tr>
+            <tr>
+                <td> <label for="">Mobile No </label></td>
+                <td>: <input type="number" name="mobile" id="" placeholder=" enter mobile number"></td>
+            </tr>
+            <tr>
+                <td><label for="">City  </label></td>
+                <td>: <select name="city" id="">
+                    <option value="hyd">-select city-</option>
+                        <option value="hyd">VIZAG</option>
+                        <option value="hyd">Vijayawada</option>
+                        <option value="hyd">Hyderabad</option>
+                        <option value="hyd">warangal</option>
+                    </select></td>
+            </tr>
+            <tr>
+                <td> <label for="">Gender</label></td>
+                <td>: <input type="radio" name="male" id="">Male<input type="radio" name="female" id="">Female</td>
+            </tr>
+            <tr>
+                <td> </td>
+                <td><input type="button" value="Register" id="btn"><a href="table.html">Back To Home</a></td>
+            </tr>
+        </table>
+    </div>
+</body>
+
+</html>

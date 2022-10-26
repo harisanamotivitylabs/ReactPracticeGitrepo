@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-image: url("https://i.pinimg.com/originals/5f/be/34/5fbe348ee1b226321eb8bb86a5c68520.jpg");
+            background-repeat: no-repeat;
+            background-size: 100% 180%;
+        }
+
+        .lform {
+            display: inline-block;
+            width: 50%;
+            text-align: center;
+            max-width: 50%;
+        }
+
+        .rform {
+            display: inline-block;
+            max-width: 50%;
+            text-align: center;
+
+        }
+
+        label {
+            color:#cf2e18;
+;
+            font-size: medium;
+
+        }
+
+        input {
+            border-radius: 25px;
+
+        }
+
+        textarea {
+
+            border-radius: 25px;
+        }
+
+        #btn {
+            display: inline-block;
+            background: #ff523b;
+            color: aliceblue;
+            padding: 5px 20px;
+            margin: 20px;
+            border-radius: 30px;
+            transition: 0.8s;
+        }
+
+    #btn:hover {
+            background: rgb(143, 154, 174);
+        }
+
+        h1,
+        h4 {
+            color:#cf2e18;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="frame">
+        <div class="lform">
+            <h1>Registration Form</h1>
+
+            <h4>(Using Drop-down list)</h4>
+            <label for="">First Name </label><br>
+            <input type="text" name="fname" id="" placeholder=" Enter first name"><br>
+
+            <label for="">Last Name </label><br>
+            <input type="text" name="lname" id="" placeholder=" Enter last name"><br>
+            <label for="">Age </label><br>
+            <input type="number" name="age" id="" placeholder=" Enter age"><br>
+            <label for="">User Name </label><br>
+            <input type="text" name="uname" id="" placeholder=" Enter user name"><br>
+            <label for="">Password </label><br>
+            <input type="password" name="password" id="" placeholder=" Enter password"><br>
+            <label for="">Email </label><br>
+            <input type="email" name="email" id="" placeholder=" Enter email address"><br>
+            <label for="">Mobile No </label><br>
+            <input type="number" name="mobile" id="" placeholder=" Enter mobile number"><br>
+            <label for="">City </label><br>
+            <select name="city" id=""><br>
+                <option value="hyd">please select state-</option>
+                <option value="hyd">VIZAG</option>
+                <option value="hyd">Vijayawada</option>
+                <option value="hyd">Hyderabad</option>
+                <option value="hyd">warangal</option>
+            </select><br><br>
+
+
+            <input type="button" value="Register" id="btn">
+
+
+
+        </div>
+        <div class="rform">
+            <h1>Signup Form</h1>
+            <h4>(Using select list)</h4>
+            <label for=""> Name </label><br>
+            <input type="text" name="fname" id="" placeholder=" Enter first name"><br>
+            <label for="">Email </label><br>
+            <input type="email" name="email" id="" placeholder=" Enter email address"><br>
+            <label for="">Password </label><br>
+            <input type="password" name="password" id="" placeholder=" Enter password"><br>
+
+            <label for="">Mobile No </label><br>
+            <input type="number" name="mobile" id="" placeholder=" Enter mobile number"><br>
+            <label for="">Message </label><br>
+            <textarea name="mesg" rows="3" cols="20" placeholder="  Enter message"></textarea><br>
+            <label for="">City </label><br>
+            <select name="city" id=""><br>
+                <option value="hyd">please select state-</option>
+                <option value="hyd">VIZAG</option>
+                <option value="hyd">Vijayawada</option>
+                <option value="hyd">Hyderabad</option>
+                <option value="hyd">warangal</option>
+            </select><br>
+            <label for="">Address </label><br>
+            <input type="address" name="address" id="" placeholder=" Enter address"><br><br>
+
+
+            <input type="button" value="Register" id="btn">
+
+        </div>
+    </div>
+
+</body>
+
+</html>
