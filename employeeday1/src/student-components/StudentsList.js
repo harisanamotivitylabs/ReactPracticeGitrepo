@@ -10,7 +10,7 @@ class StudentList extends React.Component
     }
     render()
     {
-        return<div id="listdetails">
+        return(<React.Fragment><div id="listdetails">
           <h2 >Student Details </h2>
           <table id="stdtable">
             <thead>
@@ -22,13 +22,14 @@ class StudentList extends React.Component
             </thead>
             <tbody>
                 {this.props.students.map((items)=>{
-                    return <tr><td>{items.student_Name}</td><td>{items.student_Id}</td><td>{items.student_Age}</td><td>{items.student_Branch}</td><td>{items.student_Address}</td></tr>
+                    return <tr key={items.student_Id}><td>{items.student_Name}</td><td>{items.student_Id}</td><td>{items.student_Age}</td><td>{items.student_Branch}</td><td>{items.student_Address}</td></tr>
                 })}
             </tbody>
           </table>
 
 
         </div>
+        </React.Fragment>)
     }
 }
 export default StudentList 

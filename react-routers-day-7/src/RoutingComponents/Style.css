@@ -1,0 +1,8 @@
+.header
+{
+    border: 10px;
+    background-color: rgb(166, 198, 187);
+    padding: 10px;
+    color: rgb(219, 9, 9);
+    position:sticky;
+}

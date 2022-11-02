@@ -12,11 +12,15 @@ class Students extends React.Component {
             student_Age: '',
             student_Branch: '',
             student_Address: '',
-            students: []
+            students: [],
+            isDisplay:false,
+            v:localStorage.getItem("h")
         }
     }
+   
     saveStudent(event) {
         event.preventDefault();
+        console.log(event)
         let students = this.state.students;
         let student = {
             student_Name: this.state.student_Name,
@@ -26,8 +30,12 @@ class Students extends React.Component {
             student_Address: this.state.student_Address
         }
         students.push(student);
-        this.setState({ students: students });
+        this.setState({ students: students ,isDisplay:true});
+        localStorage.setItem("h",JSON.stringify(this.state))
+        console.log( localStorage.getItem("h"))
         this.resetdata()
+
+       
        
     }
    
@@ -56,9 +64,10 @@ class Students extends React.Component {
     }
 
     render() {
-        return <div id="studenthome"><div id="stdregform">
+        return (<React.Fragment><div id="studenthome"><div id="stdregform">
             <h1> Student Register </h1>
-    <table>
+            <form>
+      <table>
             <tr><td><label>Student Name   :</label></td>
             <td><input type="text"  name="sname" value={this.state.student_Name}   onChange={(e)=>this.changeName(e)} /></td></tr><br></br><br></br>
             <tr><td><label>Student Id   :</label></td>
@@ -72,12 +81,16 @@ class Students extends React.Component {
 
           <tr><td><button  onClick={(e)=>this.saveStudent(e)}>SAVE</button></td></tr>
      </table>
+     </form>
         </div>
         <div id="listdiv">
 
         </div>
-        <StudentList students={this.state.students} />
+        {this.state.isDisplay&&<StudentList  students={this.state.students} />}
+
+
         </div >
+        </React.Fragment>)
     }
 }
 export default Students
